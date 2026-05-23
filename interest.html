@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — Woo's Grill</title>
-  <meta name="description" content="Contactez Woo's Grill pour réservation, événements et commandes nocturnes." />
+  <title>Intérêt produit — Woo's Grill</title>
+  <meta name="description" content="Contactez Woo's Grill pour en savoir plus sur notre produit et notre offre spéciale." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -32,48 +32,47 @@
 </header>
 
 <section class="hero">
-  <div class="hero-bg"><img src="/img/hero-bg.jpg" alt="Contactez-nous" /></div>
+  <div class="hero-bg"><img src="/img/hero-bg.jpg" alt="Contact produit" /></div>
   <div class="hero-overlay"></div>
   <div class="grain"></div>
   <div class="hero-content">
-    <div class="badge reveal">📬 Contact</div>
-    <h1 class="reveal"><span>Parle-nous</span><br><span>de ta soirée</span><br><span>ou de ta commande.</span></h1>
-    <p class="lead reveal">Réserve une table, commande pour la nuit ou organise un événement street food.</p>
+    <div class="badge reveal">📌 Intéressé par le produit</div>
+    <h1 class="reveal"><span>Dis-nous</span><br><span>comment</span><br><span>tu veux en profiter.</span></h1>
+    <p class="lead reveal">Tu veux recevoir une démo, une offre ou plus d'infos sur le produit ? Envoie-nous un message, on te répond rapidement.</p>
     <div class="cta reveal">
-      <a href="index.html" class="btn btn-ghost">Retour à l'accueil</a>
-      <a href="menu.html" class="btn btn-primary">Voir le menu</a>
+      <a href="contact.html" class="btn btn-ghost">Page contact</a>
+      <a href="index.html" class="btn btn-primary">Retour à l'accueil</a>
     </div>
   </div>
 </section>
 
 <section>
   <div class="container contact-wrap reveal">
-    <div class="eyebrow">Contact</div>
-    <h2 class="h-display" style="margin-top:.5rem">Dis-nous ce dont tu as besoin.</h2>
-    <p style="color:var(--muted);margin-top:.75rem">Pour réservation, événement ou commande de groupe, remplis le formulaire ci-dessous.</p>
-    <form onsubmit="event.preventDefault();alert('Demande envoyée 🔥')">
+    <div class="eyebrow">Formulaire Produit</div>
+    <h2 class="h-display" style="margin-top:.5rem">Parle-nous de ton projet.</h2>
+    <p style="color:var(--muted);margin-top:.75rem">Un contact dédié t'aidera à découvrir l'offre produit et les possibilités pour ton événement ou ta commande.</p>
+    <form id="interestForm">
       <div class="form-row">
-        <input placeholder="Ton nom" required />
-        <input type="email" placeholder="Ton email" required />
+        <input name="name" placeholder="Ton nom" required />
+        <input name="email" type="email" placeholder="Ton email" required />
       </div>
-      <textarea placeholder="Ton message..." required></textarea>
+      <div class="form-row">
+        <input name="company" placeholder="Entreprise / projet" />
+        <input name="phone" type="tel" placeholder="Téléphone" />
+      </div>
+      <textarea name="message" placeholder="Parle-nous de ton intérêt pour le produit..." required></textarea>
       <button class="btn btn-primary" type="submit">Envoyer la demande</button>
     </form>
-    <div style="margin-top:2rem;color:var(--muted)">
-      <p><strong>Adresse :</strong> 27 Rue du Grill, Quartier Nuit</p>
-      <p><strong>Horaires :</strong> 20h - 4h du matin, tous les jours</p>
-      <p><strong>Téléphone :</strong> +221 77 123 45 67</p>
-    </div>
   </div>
 </section>
 
-<section class="page-cta page-cta--contact">
+<section class="page-cta">
   <div class="container cta-inner">
     <div>
       <div class="eyebrow">Besoin d'aide ?</div>
-      <h2 class="h-display" style="margin-top:.5rem">Tu es déjà sur la page contact, on est prêts.</h2>
+      <h2 class="h-display" style="margin-top:.5rem">Notre équipe produit peut t'accompagner.</h2>
     </div>
-    <a class="btn btn-primary" href="contact.html">Page contact</a>
+    <a class="btn btn-primary" href="contact.html">Nous contacter</a>
   </div>
 </section>
 
@@ -85,9 +84,28 @@
     <a class="icon-btn" href="https://twitter.com" target="_blank" rel="noopener">X</a>
     <a class="icon-btn" href="https://linkedin.com" target="_blank" rel="noopener">in</a>
   </div>
-  <div class="copy">&copy; 2024 Woo's Grill. Crafted with fire.</div>
+  <div class="copy">&copy; 2026 Woo's Grill. Crafted with fire.</div>
 </footer>
 
 <script src="app.js" defer></script>
+<script>
+  const interestForm = document.getElementById('interestForm');
+  if (interestForm) {
+    interestForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = {
+        name: interestForm.name.value,
+        email: interestForm.email.value,
+        company: interestForm.company.value,
+        phone: interestForm.phone.value,
+        message: interestForm.message.value,
+        timestamp: new Date().toISOString()
+      };
+      console.log('Interest form submitted:', data);
+      alert('Merci ! Nous avons bien reçu ta demande.');
+      interestForm.reset();
+    });
+  }
+</script>
 </body>
 </html>

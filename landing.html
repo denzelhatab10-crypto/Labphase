@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Woo's Grill — Rejois-toi Early Access</title>
+  <meta name="description" content="Sois parmi les premiers à goûter Woo's Grill. Inscris-toi et reçois 20% de réduction sur ta première commande." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="landing-page">
+
+<!-- Header: minimal nav with logo -->
+<header class="nav landing-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="flame">🔥</span><span class="ember-text">WOO'S GRILL</span></a>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </div>
+</header>
+
+<!-- Landing Hero Section -->
+<section class="landing-hero">
+  <div class="landing-hero-bg">
+    <div class="gradient-mesh"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+  </div>
+  
+  <div class="landing-hero-content">
+    <div class="landing-badge reveal">🎉 Early Access · Limited Spots · Exclusive Offer</div>
+    
+    <h1 class="landing-title reveal">
+      <span>Sois parmi</span><br>
+      <span class="ember-text">les premiers</span><br>
+      <span>à découvrir</span><br>
+      <span class="flame-emoji">🔥 la braise 🔥</span>
+    </h1>
+    
+    <p class="landing-subtitle reveal">
+      Woo's Grill arrive bientôt. Inscris-toi dès maintenant et obtiens <strong>20% de réduction</strong> sur ta première commande + accès VIP aux événements privés.
+    </p>
+
+    <div class="landing-form-wrapper">
+      <form id="signupForm" class="landing-form">
+        <div class="form-group">
+          <input 
+            type="text" 
+            placeholder="Ton nom" 
+            name="name" 
+            required 
+            aria-label="Nom"
+          />
+          <span class="form-icon">👤</span>
+        </div>
+
+        <div class="form-group">
+          <input 
+            type="email" 
+            placeholder="Email" 
+            name="email" 
+            required 
+            aria-label="Email"
+          />
+          <span class="form-icon">📧</span>
+        </div>
+
+        <div class="form-group">
+          <input 
+            type="tel" 
+            placeholder="+33 6 XX XX XX XX" 
+            name="phone" 
+            aria-label="Téléphone"
+          />
+          <span class="form-icon">📱</span>
+        </div>
+
+        <div class="form-group">
+          <select name="interest" required aria-label="Ce qui t'intéresse le plus">
+            <option value="">Sélectionne ce qui t'intéresse</option>
+            <option value="smash-burgers">Smash Burgers 🍔</option>
+            <option value="sandwiches">Sandwiches Grillés 🥪</option>
+            <option value="afro-vibes">Ambiance Afro-pop 🎵</option>
+            <option value="late-night">Late Night Delivery 🌙</option>
+            <option value="events">Événements Privés 🎉</option>
+          </select>
+          <span class="form-icon">✨</span>
+        </div>
+
+        <label class="checkbox-label">
+          <input type="checkbox" name="consent" required />
+          <span>Je veux recevoir les infos exclusives et les offres spéciales 🔔</span>
+        </label>
+
+        <button type="submit" class="btn btn-primary landing-btn" aria-label="S'inscrire maintenant">
+          S'inscrire & Obtenir 20% 🎁
+        </button>
+
+        <p class="form-note">Pas de spam. Promis. 🤝</p>
+      </form>
+
+      <!-- Success Message -->
+      <div id="successMessage" class="success-message hidden">
+        <div class="success-content">
+          <div class="success-icon">✅</div>
+          <h2>Bienvenue à bord!</h2>
+          <p>Nous t'avons envoyé un email avec ton code promo <strong>WOO20</strong>.</p>
+          <p class="secondary">À bientôt pour des nuits qui crépitent! 🔥</p>
+          <a href="index.html" class="btn btn-ghost">Retour à l'accueil</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-social reveal">
+      <p>Suis-nous pour les dernières nouvelles</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram" title="Instagram">📸</a>
+        <a href="#" aria-label="TikTok" title="TikTok">🎬</a>
+        <a href="#" aria-label="Twitter" title="Twitter">𝕏</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Section -->
+<section class="landing-trust">
+  <div class="container">
+    <h2>Pourquoi WOO's GRILL?</h2>
+    <div class="trust-grid">
+      <div class="trust-card reveal">
+        <div class="trust-icon">🔥</div>
+        <h3>Grillé à vive braise</h3>
+        <p>Sandwiches et burgers cuits sur charbon de bois chaque commande. Croustillant garanti.</p>
+      </div>
+      <div class="trust-card reveal">
+        <div class="trust-icon">🎵</div>
+        <h3>Vibes Afro-pop</h3>
+        <p>Ambiance électrique, playlists qui claquent, et une énergie qui ne s'éteint jamais.</p>
+      </div>
+      <div class="trust-card reveal">
+        <div class="trust-icon">🌙</div>
+        <h3>Late Night Living</h3>
+        <p>Ouvert jusqu'à l'aube pour tes cravings de minuit. Livraison rapide. Toujours frais.</p>
+      </div>
+      <div class="trust-card reveal">
+        <div class="trust-icon">👥</div>
+        <h3>Communauté Gen Z</h3>
+        <p>Plus qu'un resto, c'est un lieu de vie. Événements, connexions, et bonne vibes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-cta">
+  <div class="container cta-inner">
+    <div>
+      <div class="eyebrow">Intéressé ?</div>
+      <h2 class="h-display" style="margin-top:.5rem">Parle-nous du produit et de ton projet.</h2>
+    </div>
+    <a class="btn btn-primary" href="contact.html">Nous contacter</a>
+  </div>
+</section>
+
+<footer class="landing-footer">
+  <p>&copy; 2026 Woo's Grill. À bientôt! 🔥</p>
+  <p class="footer-links"><a href="index.html">Accueil</a> • <a href="#">Conditions</a> • <a href="#">Confidentialité</a></p>
+</footer>
+
+<script src="app.js"></script>
+<script>
+  // Landing page signup form handling
+  const form = document.getElementById('signupForm');
+  const successMsg = document.getElementById('successMessage');
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Collect form data
+      const formData = new FormData(form);
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        interest: formData.get('interest'),
+        timestamp: new Date().toISOString()
+      };
+
+      try {
+        // TODO: Replace with your actual backend endpoint
+        // Example: await fetch('/api/signup', { method: 'POST', body: JSON.stringify(data) })
+        console.log('Signup data:', data);
+        
+        // Simulate successful submission
+        form.classList.add('hidden');
+        successMsg.classList.remove('hidden');
+        
+        // Optional: Send to external service (Mailchimp, Zapier, etc.)
+        // You can add integration here
+        
+      } catch (error) {
+        console.error('Signup error:', error);
+        alert('Oups! Une erreur est survenue. Réessaye plus tard.');
+      }
+    });
+  }
+</script>
+</body>
+</html>
