@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Woo's Grill — Afro-Night Flame Kitchen</title>
+<meta name="description" content="Sandwiches grillés au feu, vibes Afro-pop, nuits qui claquent. Woo's Grill: street food, smash burgers et bonnes ondes pour la Gen Z." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header / navigation: brand, links and actions -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#accueil" class="brand"><span class="flame">🔥</span><span class="ember-text">WOO'S GRILL</span></a>
+    <nav class="links">
+      <a href="#accueil">Accueil</a><a href="#menu">Menu</a><a href="#apropos">À Propos</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn primary" aria-label="Panier">🛍️</button>
+      <button class="icon-btn" id="menuToggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+  <div id="mobileMenu">
+    <a href="#accueil">Accueil</a><a href="#menu">Menu</a><a href="#apropos">À Propos</a><a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- Hero / Accueil: main visual with CTA -->
+<section id="accueil" class="hero">
+  <div class="hero-bg"><img src="/img/hero-bg.jpg" alt="" /></div>
+  <div class="hero-overlay"></div>
+  <div class="grain"></div>
+  <div class="sparks" id="sparks"></div>
+  <div class="hero-content">
+    <div class="badge reveal">✨ Open Late · Live Grill · Afro Vibes</div>
+    <h1 class="reveal"><span>Goûte la</span><br><span class="ember-text">nuit qui</span><br><span>crépite.</span></h1>
+    <p class="lead reveal">Sandwiches braise vive, sauces qui frappent, ambiance Afro-pop jusqu'au lever du soleil.</p>
+    <div class="cta reveal">
+      <a href="#menu" class="btn btn-primary">Voir le menu 🔥</a>
+      <a href="#apropos" class="btn btn-ghost">Notre histoire</a>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Explore</div>
+        <h2 class="h-display" style="margin-top:.5rem">Pages dédiées pour plus de détails.</h2>
+      </div>
+      <p style="color:var(--muted)">Plonge dans le menu complet, l'histoire du grill et la réservation facile.</p>
+    </div>
+    <div class="feature-grid">
+      <article class="card reveal">
+        <div class="card-body">
+          <h3>Menu complet</h3>
+          <p>Découvre tous nos plats, les ingrédients et les offres spéciales réservées à la nuit.</p>
+          <a class="btn btn-primary" href="menu.html">Voir le menu</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card-body">
+          <h3>Notre histoire</h3>
+          <p>En savoir plus sur la vibe Afro, les recettes maison et la philosophie Woo's Grill.</p>
+          <a class="btn btn-primary" href="about.html">Notre histoire</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card-body">
+          <h3>Réservations</h3>
+          <p>Prépare ton passage au grill et contacte-nous pour événements ou services nocturnes.</p>
+          <a class="btn btn-primary" href="contact.html">Contact</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Menu: dynamically rendered menu cards -->
+<section id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Le Menu</div>
+        <h2 class="h-display" style="margin-top:.5rem">Du feu, du fromage, du flow.</h2>
+      </div>
+      <p style="color:var(--muted)">Quatre signatures grillées sur braise, prêtes à être commandées à 2h du mat.</p>
+      <a class="btn btn-ghost" href="menu.html">Détails du menu</a>
+    </div>
+    <div class="menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- About / À Propos: story, stats and imagery -->
+<section id="apropos" class="about">
+  <div class="grain"></div>
+  <div class="container about-grid">
+    <div class="about-img reveal"><img src="/img/about.jpg" alt="Notre chef au feu" /></div>
+    <div class="about-text reveal">
+      <div class="eyebrow">À Propos</div>
+      <h2 class="h-display" style="margin-top:.5rem">Né d'une braise. Élevé pour la night.</h2>
+      <p>Depuis 2020, Woo's Grill, c'est le rendez-vous des âmes affamées de saveurs vraies. Du steak smashé devant toi, de la sauce maison, et la playlist qui monte.</p>
+      <p>Ingrédients locaux, recettes pensées pour la Gen Z, énergie nuit blanche. On ne fait pas du fast-food. On fait du <span class="ember-text" style="font-weight:700">feel-food</span>.</p>
+      <a class="btn btn-ghost" href="about.html">Plus sur notre histoire</a>
+      <div class="stats">
+        <div class="stat"><div class="stat-num ember-text">5+</div><div class="stat-lbl">Ans de braise</div></div>
+        <div class="stat"><div class="stat-num ember-text">12k</div><div class="stat-lbl">Sandwiches/mois</div></div>
+        <div class="stat"><div class="stat-num ember-text">2h</div><div class="stat-lbl">Service nocturne</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact: contact form and quick reach-out -->
+<section id="contact">
+  <div class="contact-wrap reveal">
+    <div class="eyebrow">Contact</div>
+    <h2 class="h-display" style="margin-top:.5rem">Dis-nous tout.</h2>
+    <p style="color:var(--muted);margin-top:.75rem">Réservations, événements, ou juste pour kiffer.</p>
+    <a class="btn btn-ghost" href="contact.html">Page contact</a>
+    <form onsubmit="event.preventDefault();alert('Message envoyé 🔥')">
+      <div class="form-row">
+        <input placeholder="Ton nom" required />
+        <input type="email" placeholder="Ton email" required />
+      </div>
+      <textarea placeholder="Ton message..." required></textarea>
+      <button class="btn btn-primary" type="submit">Envoyer le message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer: socials and copyright -->
+<footer>
+  <a href="#accueil" class="brand" style="justify-content:center"><span class="flame">🔥</span><span class="ember-text">WOO'S GRILL</span></a>
+  <div class="socials">
+    <a class="icon-btn" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+    <a class="icon-btn" href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+    <a class="icon-btn" href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">X</a>
+    <a class="icon-btn" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+  </div>
+  <div class="copy">&copy; 2024 Woo's Grill. Crafted with fire.</div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
